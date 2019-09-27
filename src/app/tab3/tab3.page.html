@@ -1,0 +1,34 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content></ion-content>
+-->
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Calculo TROCO</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating">Valor Comprado:</ion-label>
+      <ion-input [(ngModel)]="comprado" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Valore Recebido:</ion-label>
+      <ion-input [(ngModel)]="recebido" type="number"></ion-input>
+    </ion-item>
+    
+      <ion-button color="secondary" expand="full" (click)="enviaDados()">
+      Troco
+      </ion-button>
+   <ion-button color="danger" expand="full" (click)= "closeModal()">
+     Fechar
+   </ion-button>
+  </ion-content>
+  
